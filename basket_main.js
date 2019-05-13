@@ -3,8 +3,8 @@ function genera_random(min, max) {
 }
 
 var alfabeto = "ABCDEFGHILMNOPQRSTUVZ";
-var numeri = "1234567890"
-//var lunghezza =
+var numeri = "1234567890";
+
 function lettere_random(max1, max2) {
   prova = '';
   for (var i = 0; i < 3; i++) {
@@ -13,23 +13,30 @@ function lettere_random(max1, max2) {
   for (var j = 0; j < 3; j++) {
     prova += numeri.charAt(Math.floor(Math.random() * max2));
   }
-
   return prova
 }
-var codice = lettere_random (21,10);
-console.log(codice);
 
-//
-// var punti = genera_random (0, 10);
-// var rimbalzi = genera_random (0, 10);
-// var falli = genera_random (0, 10);
-// var tiri_2punti = genera_random (0, 10);
-// var tiri_3punti = genera_random (0, 10);
+codici = [];
 
-// var generico = {
-//   "p": punti,
-//   "cognome": rimbalzi,
-//   "eta": falli,
-//   "eta": tiri_2punti,
-//   "eta": tiri_3punti,
-// };
+for (var k = 0; k < 5; k++) {
+  codice = lettere_random (21,10);
+  codici.push(codice);
+  console.log(codici);
+}
+
+for (var i = 0; i < 5; i++) {
+
+}
+
+var valori = [];
+for (var i = 0; i < 5; i++) {
+  valore = {
+    "punti": genera_random (0, 10),
+    "rimbalzi": genera_random (0, 10),
+    "falli": genera_random (0, 10),
+    "tiri2": genera_random (0, 10),
+    "tiri3": genera_random (0, 10),
+  };
+  valori.push(valore);
+  console.log(valori);
+}
