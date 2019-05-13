@@ -24,10 +24,6 @@ for (var k = 0; k < 5; k++) {
   console.log(codici);
 }
 
-for (var i = 0; i < 5; i++) {
-
-}
-
 var valori = [];
 for (var i = 0; i < 5; i++) {
   valore = {
@@ -38,5 +34,20 @@ for (var i = 0; i < 5; i++) {
     "tiri3": genera_random (0, 10),
   };
   valori.push(valore);
-  console.log(valori);
+  //console.log(valori);
 }
+
+for (var i = 0; i < valori.length; i++) {
+  for (var field in valori){
+  }
+  console.log(valori[i]);
+}
+
+for (var i = 0; i < 5; i++) {
+  var uno = $('.giocatori').append('<div> giocatore </div>');
+  var due = $('.valori').append('<div> valore </div>');
+}
+
+$('.giocatore').click(function(){
+  $(this).show('valore')
+});
