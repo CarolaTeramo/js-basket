@@ -1,0 +1,11 @@
+.giocatore{
+  border: 2px solid black;
+  height: 30px;
+  width: 70px;
+}
+.valore{
+  border: 2px solid red;
+  height: 20px;
+  width: 70px;
+  display: none;
+}

@@ -43,11 +43,14 @@ for (var i = 0; i < valori.length; i++) {
   console.log(valori[i]);
 }
 
-for (var i = 0; i < 5; i++) {
-  var uno = $('.giocatori').append('<div> giocatore </div>');
-  var due = $('.valori').append('<div> valore </div>');
-}
+var uno = $('.giocatore').html(codici);
+
+// for (var i = 0; i < 5; i++) {
+//
+//   var due = $('.valori').append('<div> codici </div>');
+//   $('.valore').html('codice');
+// }
 
 $('.giocatore').click(function(){
-  $(this).show('valore')
+  $(this).html(valore)
 });
