@@ -102,6 +102,7 @@ var template_function = Handlebars.compile(template_html);
 // reagisco al cambio di selezione del giocatore
 $('#player_list .giocatore').click(function() {
 
+  $('#player_statistics').html('');
   // con attr recupero l'indice (=attr di a)del giocatore su cui ho cliccato
   // e lo chiamo giocatore selezionato == indice
   var selected_player = $(this).children('a').attr('data-mio');
@@ -140,12 +141,13 @@ $('#player_list .giocatore').click(function() {
   var html_finale1 = template_function(variabile2);
   // appendo questo var all id che è nell'html
   $('#player_statistics').append(html_finale1);
+// oppure e tolgo reset all'inizio $('#player_statistics').html(html_finale1);
 
-  
   // mostra tutto il div statistiche
   $('#player_statistics').show();
 
 });
+
 
 
 // appendo questo var all id che è nell'html
