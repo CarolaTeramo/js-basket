@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="basket_hbar_style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <ul id="player_list">
+
+    </ul>
+
+    <div id="player_statistics">
+
+    </div>
+
+
+    <script id="entry-template" type="text/x-handlebars-template">
+      <li class="giocatore"><a href="#" data-mio= "{{attributo}}">{{ codice }} </a></li>
+
+    </script>
+
+
+    <script id="prova" type="text/x-handlebars-template">
+
+      <div id="">
+        <h1 class="player_code_container">{{ codice }}</h1>
+        <div class="punti">
+          <h2>Punti fatti: <span> {{ punti }}</span></h2>
+        </div>
+        <div class="rimbalzi">
+          <h2>Rimbalzi: <span>{{ rimbalzi }}</span></h2>
+        </div>
+        <div class="falli">
+          <h2>Falli: <span>{{ falli }}</span></h2>
+        </div>
+        <div class="tiri_2">
+          <h2>Tiri da 2 punti (%): <span>{{ perc_2 }}</span></h2>
+        </div>
+        <div class="tiri_3">
+          <h2>Tiri da 3 punti (%): <span>{{ perc_3 }}</span></h2>
+        </div>
+      </div>
+
+    </script>
+
+
+    <script type="text/javascript" src="basket_hbar_main.js"></script>
+  </body>
+</html>
